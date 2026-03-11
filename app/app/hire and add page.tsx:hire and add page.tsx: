@@ -1,0 +1,16 @@
+export default function HirePage() {
+  return (
+    <main style={{ padding: 40 }}>
+      <h1>Employer Job Request</h1>
+
+      <form method="post" action="/api/employer">
+        <input name="company_name" placeholder="Company Name" />
+        <input name="contact_name" placeholder="Contact Name" />
+        <input name="phone" placeholder="Phone" />
+        <input name="job_title" placeholder="Job Title" />
+        <input name="location" placeholder="Location" />
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+  );
+}
