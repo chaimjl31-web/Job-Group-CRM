@@ -1,0 +1,16 @@
+import Link from "next/link";
+
+export default function HomePage() {
+  return (
+    <main style={{ padding: 40 }}>
+      <h1>Recruitment CRM</h1>
+      <p>Simple recruitment system.</p>
+
+      <div style={{ display: "flex", gap: 20 }}>
+        <Link href="/apply">Candidate Form</Link>
+        <Link href="/hire">Employer Form</Link>
+        <Link href="/login">Admin Login</Link>
+      </div>
+    </main>
+  );
+}
