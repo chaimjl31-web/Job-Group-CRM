@@ -1,0 +1,17 @@
+Create folder app/apply and add page.tsx:
+export default function ApplyPage() {
+  return (
+    <main style={{ padding: 40 }}>
+      <h1>Candidate Application</h1>
+
+      <form method="post" action="/api/candidate">
+        <input name="full_name" placeholder="Full Name" />
+        <input name="phone" placeholder="Phone" />
+        <input name="email" placeholder="Email" />
+        <input name="location" placeholder="Location" />
+        <input name="skills" placeholder="Skills" />
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+  );
+}
